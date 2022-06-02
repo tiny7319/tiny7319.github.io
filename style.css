@@ -1,0 +1,221 @@
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.nav-center{
+    width: 90vw;
+    max-width: var(--max-width);
+
+}
+.nav-header{
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-btn{
+    padding: 0.15rem 0.75rem;
+}
+.nav-link{
+    display: flex;
+    flex-direction: column;
+}
+.nav-link{
+    display: block;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--grey-900);
+    letter-spacing: var(--letterspacing);
+    padding: 1rem 0rem;
+    border-top: 1px solid var(--grey-500);
+    transition: var(--transition);
+    text-decoration: none;
+
+}
+.nav-link.hover{
+    color var(--primary-500);
+
+}
+.contact-link a{
+    padding: 0.15rem 1rem; 
+    text-decoration: none;
+
+}
+@media screen and (min-width: 992px;) {
+    .nav-btn{
+        display: none;
+    }
+    .navbar{
+        height: 6rem;
+    }
+    .nav-center{
+        display: flex;
+        align-items: center;
+    }
+    .nav-header{
+        height: auto;
+        margin-right: 2rem;
+    }
+    .nav-links{
+        height: auto;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+    }
+    .nav-link{
+        padding: 0;
+        border-top: none;
+        margin-right: 1rem;
+        font-size: 1rem;
+    }
+    .contact-links{
+        margin-left: auto;
+        margin-right: 0;
+    }
+}
+
+.page-footer{
+    height: 4rem;
+    background-color: black;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+ul{
+    list-style-type: none;
+    color:rgb(190, 145, 231);
+}
+.hero{
+    background-image: url(https://knoxvillemoms.com/wp-content/uploads/2020/11/kitchen-mess-1024x556.png);
+    background-repeat: none;
+    background-position: center;
+    background-size: cover;
+    background-color: white;
+    position: relative;
+    height: 400px;
+    margin-top: 20px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+}
+.hero-container{
+    position: center;
+    width: auto;
+    height: 400px;
+    background: rgb(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.hero-text{
+    color: white;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif; 
+    font-size: 200%;
+    padding-top: 10px;
+    line-height: 20px;
+}
+@media screen and (min-width: 768px) {
+    .hero-text h1{
+        font-size: 4rem;
+        margin-bottom: 0;
+    }
+}
+.recipes-container{
+    display: grid;
+    gap: 2rem 1rem;
+}
+.tags-container{
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.recipes-list{
+    display: grid;
+    gap: 2rem 1rem;
+    padding-bottom: 3rem;
+}
+.tags-container h4{
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    font-size: 150%;
+}
+.tags-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.tags-list a{
+    text-transform: capitalize;
+    display: block;
+    color: grey;
+    transition: var(--transition);
+    text-decoration: none;
+}
+.tags-list a:hover{
+    color: var(--primary-500);
+}
+.recipe{
+    display: block;
+}
+.recipes-list a{
+    text-decoration: none;
+    color: grey;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.recipes-list h5{
+    color: rgb(66, 62, 62);
+}
+.recipe-img{
+    height: 15rem;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+}
+.recipes h5{
+    margin-bottom: 0;
+    line-height: 1;
+    color: var(--grey-700);
+}
+.recipes p{
+    margin-bottom: 0;
+    line-height: 1;
+    margin-top: 0.5rem;
+    color: var(--grey-500);
+    letter-spacing: var(--letterspacing);
+}
+@media screen and (min-width: 576px) {
+    .recipes-list{
+        grid-template-columns: 1fr 1fr;
+    }
+    .recipes-img{
+        height: 10rem;
+    }
+}
+@media screen and (min-width: 992px){
+    .recipes-container{
+        grid-template-columns: 200px 1fr;
+    }
+    .recip p{
+        font-size: 0.85rem;
+    }
+    .tags-container{
+        order: 0;
+    }
+    .tags-list{
+        grid-template-columns: 1fr;
+    }
+
+}
+@media screen and (min-width: 1200px){
+    .recipes-list{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .recipe h5{
+        font-size: 1.15rem;
+    }
+
+}
